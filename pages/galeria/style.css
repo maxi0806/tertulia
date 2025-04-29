@@ -1,0 +1,109 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('../../fuentes/PP\ Hatton\ Medium\ 500.otf') format('truetype');
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    font-family: 'MiFuentePersonalizada', sans-serif;
+    font-size: x-large;
+}
+
+nav a{
+    color: #2e2e2e;
+    padding: 10px 38px;
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'MiFuentePersonalizada', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(218, 217, 217);
+}
+
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+h2 {
+    color: #2e2e2e;
+    font-size: 35px;
+}
+
+label {
+    color: #2e2e2e;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #d3c4b7;
+    border: 2px solid #2e2e2e;
+    color: #2e2e2e;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #2e2e2e
+}
+
+.btn {
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 25px;
+    background-color: #ac9f95;
+    box-shadow: 0 0 2.5px #2e2e2e;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2e2e2e;
+}
+
+@media(max-width:991px) {
+    
+    body{
+        padding: 30px;
+    }
+
+    form {
+        padding: 50px 30px;
+        width: 100%;
+    }
+
+    input {
+        padding: 15px;
+    }
+
+}
+

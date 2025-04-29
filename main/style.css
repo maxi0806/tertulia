@@ -1,0 +1,144 @@
+header{
+    padding: 1px 15px;
+    font-family: 'MiFuentePersonalizada', sans-serif;
+    font-size: xx-large;
+    color: #2e2e2e;
+}
+
+.imagen-fondo{
+    background-image: url('../img/granos-cafe-levitan-sobre-fondo-blanco.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    font-family: 'MiFuentePersonalizada', sans-serif;
+    font-size: x-large;
+}
+
+nav a{
+    color: #2e2e2e;
+    padding: 10px 4.1rem;
+    text-decoration: none;
+}
+
+
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('../fuentes/PP\ Hatton\ Medium\ 500.otf') format('truetype');
+}
+
+
+
+body {
+    font-family: 'MiFuentePersonalizada', sans-serif;
+    line-height: 1.5;
+    padding: 2rem;
+    background-color: rgb(218, 217, 217);
+}
+
+.contenedor {
+    display: flex;
+    gap: 2rem; /* espacio entre columnas */
+    align-items:end; 
+    color: #4e4033;
+}
+
+
+img {
+    border-radius: 13px; /* Cambie 15px por el valor que desee */
+}
+
+.texto {
+    
+    flex: 2.2 0.5 0%; 
+    padding: 1.5rem;
+    background-color: #d3c4b7;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenedor {
+flex-direction: column;
+    }
+
+    .texto,
+    .imagen {
+    flex: 1 1 100%;
+    }
+}
+
+
+.imagen-2 {               
+    margin-top: 1rem;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.buttons {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #2e2e2e;
+    color: #f1f1f1;
+    border-radius: 50%;
+    transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+    transform: scale(1.2);
+}
+
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('../fuentes/PP\ Hatton\ Medium\ 500.otf') format('truetype');
+}
+
+.footer {
+    margin-top: auto;
+    padding-top: 3.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer-p {
+    text-align: center;
+}
+
+.bloque-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    flex: 2.2 0.5 0%;
+}
+
+.heading {
+    color: #2e2e2e;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 4rem;
+}
+
+
+
