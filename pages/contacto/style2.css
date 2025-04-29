@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('../../fuentes/PP\ Hatton\ Medium\ 500.otf') format('truetype');
+}
+
+body {
+    font-family: 'MiFuentePersonalizada', sans-serif;
+    background-color: rgb(218, 217, 217);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+form {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.col-12{
+    padding-bottom: 6px;
+}
+
+
+input{
+    background-color: grey;
+}
+
+.form-control{
+    background-color: grey;
+}
+
+.btn-dark {
+    background-color: grey !important;
+    border-color: grey !important;
+    color: #000 !important; /* Cambia el color del texto si es necesario */
+}
+
+.bg-dark {
+    background-color: grey !important;
+    border-color: grey !important;
+    color: #000 !important; /* Cambia el color del texto si es necesario */
+}
