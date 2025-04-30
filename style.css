@@ -11,7 +11,7 @@ header{
 }
 
 .imagen-fondo{
-    background-image: url('../img/granos-cafe-levitan-sobre-fondo-blanco.png');
+    background-image: url('img/granos-cafe-levitan-sobre-fondo-blanco.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
