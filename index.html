@@ -4,147 +4,150 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/menu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <title>Tertulia</title>
 </head>
 
 <body>
 
-    <div class="imagen-fondo">
-        <header>
-            <h1>Tertulia</h1>
-        </header>
 
-        <nav>
-            <a href="pages/galeria/">Galeria</a>
-            <a href="pages/contacto/index.html">Contacto</a>
-            <a href="pages/recomendaciones/reco.html">Recomendaciones</a>
-        </nav>
+
+
+
+    <header class="hero">
+        <div class="overlay"></div>
+
+        <div class="contenido-centrado">
+            <h1 class="titulo">Tertulia</h1>
+            <p>Mmm tomamos un café? Ya!</p>
+            <p>Un café acogedor donde cada sorbo invita a la charla y al descanso.</p>
+            <nav>
+                <a href="#menu">Menu</a>
+                <a href="pages/galeria/index.html">Galería</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    
+    <div id="menu">
+        <h1 class="titulo-menu">Menu</h1>
+        <main class="cards-container">
+            <div class="card">
+                <img src="/img/cafe-con-medialunas.jpg" alt="Café y medialunas">
+                <h2>Desayuno Clásico</h2>
+                <p>Incluye café con leche y medialunas recién horneadas.</p>
+                <button>Ver más</button>
+            </div>
+
+            <div class="card">
+                <img src="/img/jugo-con-tostado.jpg" alt="Jugo y tostado">
+                <h2>Combo Saludable</h2>
+                <p>Jugo natural con tostado de pan integral y queso fresco.</p>
+                <button>Ver más</button>
+            </div>
+
+            <div class="card">
+                <img src="/img/yogur-frutas-del-bosque.jpg" alt="Jugo y tostado">
+                <h2>Desayuno Dulce</h2>
+                <p>Yogur con frutas de estación, granola casera y un toque de miel natural.</p>
+                <button>Ver más</button>
+            </div>
+
+            <div class="card">
+                <img src="/img/dasdaasdasda.jpg" alt="Jugo y tostado">
+                <h2>Sándwich Clásico</h2>
+                <p>Pan artesanal con jamón cocido, queso, acompañado con bebida.</p>
+                <button>Ver más</button>
+            </div>
+        </main>
+
     </div>
 
-    <section class="contenedor">
-        <aside class="imagen-1">
-            <img src="img/imagen-cafeteria.jpg" />
-        </aside>
 
-        <div class="bloque-texto">
-            <article class="texto">
-                <h2>Mmm tomamos un cafe?</h2> <br />
-                <p>
-                    Un café acogedor donde cada sorbo invita a la charla y al descanso.
-                </p>
-            </article>
 
-            <article class="texto">
-                <h2>¿Dónde nos encontramos?</h2> <br />
-                <p>
-                    En Tertulia, cada visita es una invitación a detener el tiempo, conectar de verdad y celebrar los
-                    pequeños grandes placeres de la vida. <br /><br />
-                    Dirección: Rodríguez Pena 875, Castelar, Provincia de Buenos Aires <br /> <br />
-                    Horario: Cierra a las 8 p.m. <br /> <br />
-                    Un espacio cálido y acogedor, ideal para disfrutar de una buena charla, leer un libro o simplemente
-                    desconectar acompañado de sabores únicos y un ambiente lleno de calma.
-                </p>
-            </article>
+
+
+    <section class="formulario-contenedor" id="contacto">
+        <h1 class="titulo-contacto">Contacto</h1>
+
+        <div class="input-group">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre">
+                </div>
+                <div class="col-md-6">
+                    <label for="phone" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Teléfono">
+                </div>
+                <div class="col-md-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" name="message" rows="5"
+                        placeholder="Mensaje"></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn boton-enviar">Enviar</button>
+                </div>
+            </form>
         </div>
+
     </section>
 
-    <section class="productos" id="productos">
 
-        <h1 class="heading">Menu</h1>
 
-        <div class="box-container">
 
-            <div class="box">
-                <span class="descuento">-20%</span>
-                <div class="image">
-                    <img src="img/cafe-con-medialunas.jpg" alt="">
-                </div>
 
-                <div class="content">
-                    <h3>Cafe con medialunas</h3>
-                    <div class="precio">8.000$ <span>10.000$</span>
-                    </div>
-                </div>
-            </div>
+    <div class="videos-container">
 
-            <div class="box">
-                <span class="descuento">-15%</span>
-                <div class="image">
-                    <img src="img/cafe-con-tostado.jpeg" alt="">
-                </div>
+        <div class="video">
 
-                <div class="content">
-                    <h3>Cafe con tostado</h3>
-                    <div class="precio">10.200$ <span>12.000$</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <span class="descuento">-10%</span>
-                <div class="image">
-                    <img src="img/jugo-con-tostado.jpg" alt="">
-                </div>
-
-                <div class="content">
-                    <h3>Jugo con tostado</h3>
-                    <div class="precio">11.700$ <span>13.000$</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="productos" id="productos2">
-        <div class="box-container">
-
-            <div class="box">
-                <span class="descuento">-20%</span>
-                <div class="image">
-                    <img src="img/cafe-solo.jpg" alt="">
-                </div>
-
-                <div class="content">
-                    <h3>Cafe negro</h3>
-                    <div class="precio">5.600$ <span>7.000$</span>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="box">
-                <span class="descuento">-15%</span>
-                <div class="image">
-                    <img src="img/tostados-solos.jpg" alt="">
-                </div>
-
-                <div class="content">
-                    <h3>Tostado</h3>
-                    <div class="precio">6.800$ <span>8.000$</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <span class="descuento">-10%</span>
-                <div class="image">
-                    <img src="img/jugo-solo.webp" alt="">
-                </div>
-
-                <div class="content">
-                    <h3>Jugo</h3>
-                    <div class="precio">7.200$ <span>8.000$</span>
-                    </div>
-                </div>
-            </div>
+            <iframe class="video-yt-1" width="560" height="315"
+                src="https://www.youtube.com/embed/uWqKMF4bHHc?si=U5dB1pIqd98rBi3_?autoplay=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
         </div>
-    </section>
+
+        <div class="video">
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZCXG0BCFLNA?si=rCzHhODYZwTk4g_u"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+
+        <div class="video">
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AGTikZqSH44?si=shsqCPdqLs6tsL_T"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+
+    </div>
+
+
+
+
 
     <footer class="footer">
         <div class="buttons">

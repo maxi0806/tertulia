@@ -1,80 +1,81 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+.titulo {
+    font-size: 4.5rem;
+}
+
+.hero {
+    position: relative;
+    background-image: url(img/pexels-jayoke-851555.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Cal Sans', sans-serif;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.contenido-centrado {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.hero nav a {
+    color: white;
+    text-decoration: none;
+    filter: brightness(85%);
+}
+
+.contenido-centrado h1 {
+    margin-bottom: 1.5rem;
+}
+
+.contenido-centrado p {
+    margin: 1.2rem
+}
+
+.contenido-centrado nav {
+    margin-top: 1.7rem
+}
+
+.contenido-centrado nav a {
+    margin: 0 3rem;
+}
+
 .cal-sans-regular {
     font-family: "Cal Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-header{
-    font-family: 'Cal Sans', sans-serif;
-    font-size: xx-large;
-    color: #2e2e2e;
-}
-
-.imagen-fondo{
-    background-image: url('img/granos-cafe-levitan-sobre-fondo-blanco.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-nav{
-    display: flex;
-    flex-direction: row;
-    font-family: 'Cal Sans', sans-serif;
-    font-size: x-large;
-}
-
-nav a{
-    color: #2e2e2e;
-    padding: 1px 4.1rem;
-    text-decoration: none;
-}
-
-body {
-    font-family: 'Cal Sans', sans-serif;
-    line-height: 1.5;
-    padding: 2rem;
-    background-color: rgb(218, 217, 217);
-}
-
-.contenedor {
-    display: flex;
-    gap: 2rem; /* espacio entre columnas */
-    align-items:end; 
-    color: #4e4033;
-}
-
-
-img {
-    border-radius: 13px;
-}
-
-.texto {
-    
-    flex: 2.2 0.5; 
-    padding: 1.5rem;
-    background-color: #d3c4b7;
-    border-radius: 0.75rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
 /* Responsive */
 @media (max-width: 768px) {
     .contenedor {
-flex-direction: column;
+        flex-direction: column;
     }
 
     .texto,
     .imagen {
-    flex: 1 1 100%;
+        flex: 1 1 100%;
     }
 }
-
-
-.imagen-1 {               
-    margin-top: 1rem;
-}
-
 
 * {
     margin: 0;
@@ -94,7 +95,7 @@ flex-direction: column;
     height: 60px;
     line-height: 60px;
     text-align: center;
-    background: #2e2e2e;
+    background: #6c4c41;
     color: #f1f1f1;
     border-radius: 50%;
     transition: all .4s ease-in-out;
@@ -111,19 +112,33 @@ flex-direction: column;
     justify-content: center;
 }
 
-.bloque-texto {
+.footer-p {
+    margin-top: auto;
+    padding-top: 2rem;
     display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    flex: 2.2 0.5 0%;
+    justify-content: center;
+    font-family: "Cal Sans", sans-serif;
+    color: #6c4c41;;
 }
 
-.heading {
-    font-family: 'Cal Sans', sans-serif;
-    color: #2e2e2e;
-    text-align: center;
-    padding-top: 2rem;
-    font-size: 4rem;
+.videos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-top: 5rem;
+}
+
+.video iframe {
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.video {
+    margin: 0;
+    padding: 0;
 }
 
 
